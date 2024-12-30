@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom File Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <h1>Image Classifier</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <!-- Custom File Input -->
+        <div class="file-input-wrapper">
+            <label for="fileInput" class="custom-file-label">Choose File</label>
+            <input id="fileInput" class="custom-file-input" type="file" name="imagefile">
+            <span id="fileName" class="file-name-text">No file chosen</span>
+        </div>
+        <!-- Submit Button -->
+        <input id="predictButton" class="custom-submit-button" type="submit" value="Predict Image">
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* File Input Wrapper */
+.file-input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between button and text */
+    position: relative;
+}
+
+/* Hide Native File Input */
+.custom-file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 40px;
+    opacity: 0; /* Hide the native file input while keeping it functional */
+    cursor: pointer;
+}
+
+/* Custom Label for File Input */
+.custom-file-label {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-file-label:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.custom-file-label:active {
+    background-color: #004085;
+    transform: scale(0.95);
+}
+
+/* Selected File Name Display */
+.file-name-text {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Submit Button */
+.custom-submit-button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-submit-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.custom-submit-button:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+}
+

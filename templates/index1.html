@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Model Deployment</title>
+        <link rel="stylesheet"href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    
+    <body>
+        <h1>Image Classifer</h1>
+        <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+            <input id="fileInput" class="custom-file-input" type="file" name="imagefile">
+            <input id="predictButton" class="custom-submit-button" type="submit" value="Predict Image">
+        </form>        
+    </body>
+</html>

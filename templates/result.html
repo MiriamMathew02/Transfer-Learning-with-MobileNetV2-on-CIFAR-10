@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+        <p class="result-text">The uploaded image is classified as: <strong>{{ predicted_class }}</strong></p>
+        <a href="/" class="btn btn-primary">Go Back</a>
+    </div>
+</body>
+</html>
